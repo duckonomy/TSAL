@@ -18,7 +18,7 @@ namespace tsal {
  */
 class PolySynth : public Instrument {
   public:
-    PolySynth(Mixer* mixer);
+    PolySynth() = default;
     virtual void getOutput(AudioBuffer<float> &buffer) override;
     void play(double note, double velocity = 100.0);
     void stop(double note);
